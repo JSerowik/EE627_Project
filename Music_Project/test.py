@@ -1,15 +1,26 @@
-import random
+import math
+import numpy as np
+
+def sigmoid(x, med):
+    return 1 / (1 + math.exp(-(x-med)))
 
 dataDir = 'DataMatrix/'
-output_file = dataDir + 'T_rand2.txt'
+file = 'Sopt.txt'
+output_file = dataDir + 'Sout.txt'
+fT = open(file, 'r')
 
-temp = []
-for x in range(0, 94290):
-	temp.append(random.randint(0, 1))
-print len(temp)
+data = []
+for line in fT:
+	data.append(float(line)) 
+fT.close()
+tmpNp = np.array(data)
+median =  np.median(tmpNp)
+sigData = []
+for item in data:
+    sigData.append(np.round(sigmoid(item, median)))
 
-fOut = open(output_file, 'w')
+'''fOut = open(output_file, 'w')
 for outstr in temp:
 	fOut.write(str(outstr) + '\n')
     
-fOut.close()
+fOut.close()'''
