@@ -1,0 +1,39 @@
+recOutput.txt -> acc: 0.8377
+
+Date: 2017-12-11 00:59:08
+
+
+
+randFirstHalf.txt ->  acc:  0.6942
+
+Date: 2017-12-11 08:02:49
+
+
+
+randSecondHalf.txt -> acc: 0.6927
+
+Date: 2017-12-11 08:12:12
+
+
+
+randAll.txt -> acc: 0.5483
+
+Date: 2017-12-11 08:14:20
+
+
+
+randAll2.txt -> acc: 0.5499
+
+Date: 2017-12-11 08:15:25
+
+
+
+T_rand.txt -> acc: 0.5011
+
+Date: 2017-12-12 02:35:06
+
+
+
+ens.txt -> acc: 0.8019
+
+Date: 2017-12-12 02:36:41
