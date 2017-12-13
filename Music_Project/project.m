@@ -47,7 +47,7 @@ ER = size(T, 1).*errT;
 a = temp*ER;
 % S = S*a
 Sopt = S*a;
-md = median(Sopt);
+md = mean(Sopt);
 [md]
 St = Logistic(Sopt, md);
 Sout = correct(St);
