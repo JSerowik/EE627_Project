@@ -1,13 +1,17 @@
 import math
+from random import *
+
 import numpy as np
 
-def sigmoid(x, med):
-    return 1 / (1 + math.exp(-(x-med)))
+
 
 dataDir = 'DataMatrix/'
 file = 'Sopt.txt'
-output_file = dataDir + 'Sout.txt'
-fT = open(file, 'r')
+output_file = dataDir + 'zeros.txt'
+#T = open(file, 'r')
+
+'''def sigmoid(x, med):
+    return 1 / (1 + math.exp(-(x-med)))
 
 data = []
 for line in fT:
@@ -17,10 +21,33 @@ tmpNp = np.array(data)
 median =  np.median(tmpNp)
 sigData = []
 for item in data:
-    sigData.append(np.round(sigmoid(item, median)))
+    sigData.append(np.round(sigmoid(item, median)))'''
 
-'''fOut = open(output_file, 'w')
-for outstr in temp:
+data = []
+for x in range(0, 9429):
+	data.append(randint(0,1))
+for x in range(0, 9429):
+	data.append(randint(0,1))
+for x in range(0, 9429):
+	data.append(randint(0,1))
+for x in range(0, 9429):
+	data.append(randint(0,1))
+for x in range(0, 9429):
+	data.append(randint(0,1))
+for x in range(0, 9429):
+	data.append(randint(0,1))
+for x in range(0, 9429):
+	data.append(randint(0,1))
+for x in range(0, 9429):
+	data.append(randint(0,1))
+for x in range(0, 9429):
+	data.append(randint(0,1))
+for x in range(0, 9429):
+	data.append(randint(0,1))
+
+print len(data)
+fOut = open(output_file, 'w')
+for outstr in data:
 	fOut.write(str(outstr) + '\n')
     
-fOut.close()'''
+fOut.close()
